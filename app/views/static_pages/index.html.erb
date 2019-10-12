@@ -1,1 +1,8 @@
-<h1>This is my first quiz.</h1>
+<% @movies.each do |movie| %>
+  <div>
+    <h1><%= movie.title %></h1><br />
+    <i><%= movie.starring %></i><br />
+  </div>
+
+  <hr />
+<% end %>
